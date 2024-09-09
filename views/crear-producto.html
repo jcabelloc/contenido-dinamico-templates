@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crear Producto</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/producto.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a href="/">Tienda</a></li>
+                <li class="main-header__item"><a class="active" href="/admin/crear-producto">Crear Producto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="product-form" action="/admin/crear-producto" method="POST">
+            <div class="form-control">
+                <label for="nombre"></label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+
+            <button class="btn" type="submit">Crear Producto</button>
+        </form>
+    </main>
+</body>
+
+</html>
