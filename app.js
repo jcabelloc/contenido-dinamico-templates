@@ -5,13 +5,17 @@ const express = require('express');
 const raizDir = require('./utils/path');
 
 const bodyParser = require('body-parser')
+const expressHbs = require('express-handlebars');
+
 
 const adminData = require('./routes/admin')
 const tiendaRoutes = require('./routes/tienda')
 
 const app = express();
 
-app.set('view engine', 'pug');
+app.engine('hbs', expressHbs());
+
+app.set('view engine', 'hbs');
 app.set('views', 'views');
 
 
