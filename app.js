@@ -9,7 +9,11 @@ const bodyParser = require('body-parser')
 const adminData = require('./routes/admin')
 const tiendaRoutes = require('./routes/tienda')
 
-const app = express()
+const app = express();
+
+app.set('view engine', 'pug');
+app.set('views', 'views');
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(raizDir, 'public')));

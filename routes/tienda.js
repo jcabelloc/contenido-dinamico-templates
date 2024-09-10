@@ -10,8 +10,7 @@ const router = express.Router();
 
 // GET requiere una coincidencia exacta en la ruta
 router.get('/', (req, res, next) => {
-    console.log('tienda.js', adminData.productos);
-    res.sendFile(path.join(raizDir, 'views', 'tienda.html'));
+    res.render('tienda');
 });
 
 module.exports = router;
